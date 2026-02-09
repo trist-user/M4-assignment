@@ -7,10 +7,15 @@
   <input id="nameInput" type="text" placeholder="Enter Name">
   <input id="ageInput" type="number" placeholder="Enter Age">
   <input id="myButton" type="button" value="Generate Song">
-  <p id="output"></p>
+  <p id="output">stuff and things</p>
 
   <script>
-
+	function happyBirthday (name, age ){
+		 let x = document.getElementById("output").innerHTML
+		 x="Happy Birthday to you!"
+		 return x
+	}
+	happyBirthday (document.getElementById("nameInput").value, document.getElementById("ageInput").value);
     // Create function, happyBirthday, that outputs "Happy Birthday to you!" using the innerHTML property
 	// Look at the code from last week's assignment if you're unsure of how to use innerHTML
 
